@@ -1,0 +1,4 @@
+SQLSERVER_HOST=jdbc:postgresql://localhost:5432/soft-lottery
+SQLSERVER_USER=postgres
+SQLSERVER_PASS=Duban2024.
+TOKEN=ruITo2yNsV816RbcVJ0GvjKjFbfNgs2DfirmwdpbBTQD8mSudfltuMGxmUCIjYZOIUeBSZqMUcdNRXhYgY8w==
