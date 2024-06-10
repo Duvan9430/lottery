@@ -33,6 +33,3 @@ build/
 .vscode/
 
 ### Custom files ###
-.env
-.env.*
-.env_*
