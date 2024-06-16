@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface LotteryRepository extends JpaRepository<LotteryEntity,Long> {
     @Query(value = "SELECT * FROM public.lottery AS lt " +
-            " WHERE lt.user_id =?2 AND lt.raffle_lottery_id =?3 AND lt.deleted IS NULL  AND (lower(concat(c.number_lottery,c.value)) like  lower(?1))", nativeQuery=true)
+            " WHERE lt.user_id =?2 AND lt.raffle_lottery_id =?3 AND lt.deleted IS NULL  AND (lower(concat(lt.number_lottery,lt.value)) like  lower(?1))", nativeQuery=true)
     Page<LotteryEntity> findAllPaginated(String filter, Long idUser,Long idRaffle, Pageable pageable);
 
     Boolean existsByNumberLotteryAndRaffleLotteryIdIdAndDeletedAtIsNullIgnoreCase(Integer numberLottery,Long raffleId);
