@@ -1,8 +1,7 @@
 package com.softlottery.lottery.lottery.dto;
 
 import com.softlottery.lottery.general.gameraffle.dto.RaffleResponseDto;
-import com.softlottery.lottery.general.gameraffle.entity.RaffleEntity;
-import com.softlottery.lottery.security.dto.UserDto;
+import com.softlottery.lottery.security.dto.UserNoRolDTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -11,7 +10,7 @@ public record LotteryResponseDto(
 
         Long id,
 
-        UserDto userId,
+        UserNoRolDTO userId,
         RaffleResponseDto raffleLotteryId,
 
         Integer numberLottery,

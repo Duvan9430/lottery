@@ -19,6 +19,6 @@ public interface RaffleRestMapper {
     @Mapping(target = "userId.id",source = "userId")
     RaffleEntity toDomain(RaffleRequestDto raffleRequestDto);
 
-    @Mapping(target = "userId",source = "userId.id")
+
     RaffleResponseDto toResponse(RaffleEntity raffleEntity);
 }
