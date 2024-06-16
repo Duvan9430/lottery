@@ -19,7 +19,7 @@ public interface LotteryRestMapper {
     @Mapping(target = "raffleLotteryId.id", source = "raffleLotteryId")
     LotteryEntity toDomain(LotteryRequestDto lotteryRequestDto);
 
-    @Mapping(target = "userId", source = "userId.id")
-    @Mapping(target = "raffleLotteryId", source = "raffleLotteryId.id")
+
+
     LotteryResponseDto toResponse(LotteryEntity entity);
 }

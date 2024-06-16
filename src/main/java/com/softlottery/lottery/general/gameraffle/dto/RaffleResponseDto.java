@@ -1,6 +1,6 @@
 package com.softlottery.lottery.general.gameraffle.dto;
 
-import com.softlottery.lottery.security.dto.UserDto;
+import com.softlottery.lottery.security.dto.UserNoRolDTO;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public record RaffleResponseDto(
      Long id,
 
-     UserDto userId,
+     UserNoRolDTO userId,
 
      String nameRaffle,
 
