@@ -59,8 +59,8 @@ public class AuthController {
             userDto.setId(user.getId());
             userDto.setToken(jwt);
 
-            mensajeRetorno.put("mensaje", "Sesión iniciada");
-            mensajeRetorno.put("usuario", userDto);
+            mensajeRetorno.put("message", "Sesión iniciada");
+            mensajeRetorno.put("data", userDto);
 
             return new ResponseEntity<>(mensajeRetorno, HttpStatus.OK);
         	
